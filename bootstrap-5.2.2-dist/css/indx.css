@@ -1,0 +1,411 @@
+:root {
+    --color: #06CBB8;
+    --color_cc: #ccc;
+}
+
+body {
+    text-transform: capitalize;
+}
+
+/* start header */
+
+.div_header {
+    background-color: var(--color_cc);
+    padding: 1%;
+}
+
+.div_header .container .row .my_col_left {
+    text-align: left;
+}
+
+.div_header .container .row .my_col_right {
+    text-align: right;
+    background-color: black;
+    max-width: 1%;
+    height: 2.5px;
+}
+
+.div_header .container .row .my_col_right::before {
+    content: "";
+    background-color: black;
+    width: 17px;
+    height: 3px;
+    position: absolute;
+    margin-top: 4.3px;
+    margin-left: -4.3px;
+    transition: 0.5s;
+}
+
+.div_header .container .row .my_col_right:hover::before {
+    cursor: pointer;
+    width: 23px;
+    margin-left: -9.3px;
+}
+
+.div_header .container .row .my_col_right::after {
+    content: "";
+    background-color: black;
+    width: 23px;
+    height: 2px;
+    position: absolute;
+    margin-top: 8.3px;
+    margin-left: -9.3px;
+}
+
+.div_header .my_icon {
+    color: var(--color);
+    font-size: 170%;
+    padding-left: 0.8%;
+    padding-top: 0.2%;
+}
+
+.div_header .container .row .my_col_left::before {
+    content: "";
+    position: absolute;
+    background-color: black;
+    width: 0.2%;
+    height: 30px;
+}
+
+.div_box {
+    background-color: var(--color);
+    width: 90px;
+    margin-right: 10%;
+    display: none;
+    text-align: center;
+}
+
+.div_box a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.div_box a:hover {
+    color: red;
+}
+
+.div_flex {
+    padding-left: 15%;
+}
+
+/* end header */
+
+/* start main */
+
+.div_center {
+    background-image: url("../../image/mountains-1412683__340.webp");
+    height: 90vh;
+    background-size: cover;
+    text-align: center;
+    padding-top: 12%;
+}
+
+.div_center h1,
+p {
+    font-weight: bold;
+}
+
+.div_center h1 {
+    font-size: 50px;
+    color: var(--color);
+}
+
+.container .row div {
+    text-align: center;
+}
+
+.container .row div .icon {
+    font-size: 50px;
+    color: var(--color);
+}
+
+.container .row div .tell,
+p {
+    text-align: center;
+    padding-bottom: 5%;
+}
+
+.container .row div .tell {
+    line-height: 40px;
+    color: slategray;
+}
+
+hr {
+    width: 40%;
+    margin-left: 30%;
+}
+
+/* end main */
+/* start senrices */
+
+.div_senrices {
+    padding-top: 3%;
+}
+
+.div_senrices h1 {
+    color: var(--color_cc);
+    font-size: 180px;
+    margin-bottom: -3%;
+}
+
+.div_flex div div div .my_icon_one {
+    padding-top: 50%;
+    font-size: 20px;
+    color: var(--color);
+}
+
+.div_flex {
+    display: flex;
+}
+
+.div_flex img {
+    padding-right: 10%;
+    width: 500px;
+    height: 300px;
+}
+
+.div_flex .container .row div div .div_icon {
+    color: var(--color);
+    font-size: 20px;
+    padding-top: 2px;
+}
+
+.div_flex::after {
+    content: "";
+    background-color: #2C4855;
+    width: 7%;
+    height: 350px;
+    position: absolute;
+    margin-left: 74%;
+    margin-top: -2%;
+    z-index: -1;
+}
+
+/* end senrices */
+/* start portfolio */
+.div_color {
+    margin-top: 5%;
+    background-color: #eee;
+}
+
+.div_color h1 {
+    color: var(--color_cc);
+    font-size: 180px;
+    margin-bottom: -3%;
+}
+
+.div_color .container .row {
+    padding-left: 4.5%;
+}
+
+.div_color .container .row div {
+    padding: 1%;
+}
+
+.container .row div .card .card-body h5,
+.Some {
+    text-align: left;
+}
+
+.container .row div .card .card-body .Some {
+    color: var(--color_cc);
+}
+
+.div_color .show {
+    margin-top: 2%;
+    margin-bottom: 2%;
+    border-radius: 6px;
+    transition: 1s;
+}
+
+.div_color .show:hover {
+    background-color: red;
+    color: white;
+}
+
+/* end portfolio */
+/* start about */
+
+.div_about {
+    padding-top: 3%;
+}
+
+.div_about h1 {
+    color: var(--color_cc);
+    font-size: 180px;
+    margin-bottom: -3%;
+}
+
+.div_about .container .row div img {
+    width: 340px;
+    height: 350px;
+}
+
+.div_about::after {
+    content: "";
+    position: absolute;
+    margin-left: -280px;
+    margin-top: -365px;
+    width: 8%;
+    height: 250px;
+    background-color: var(--color);
+    z-index: -1;
+}
+
+.div_about::before {
+    content: "";
+    position: absolute;
+    margin-left: -150px;
+    margin-top: 458px;
+    width: 5%;
+    height: 71.5px;
+    background-color: var(--color);
+    z-index: -1;
+}
+
+.div_about .container .row div .p_lorem {
+    text-align: left;
+}
+
+.div_about .container .row div .p_lorem::after {
+    content: "";
+    background-color: var(--color);
+    width: 20%;
+    height: 5px;
+    position: absolute;
+    margin-top: 58.8px;
+    margin-left: -325.5px;
+}
+
+.div_about .container .row div .p_lorem_one {
+    text-align: left;
+    color: var(--color_cc);
+}
+
+/* end about */
+/* start contact */
+.div_color div .my_h2,
+.my_h2_one {
+    font-size: 35px;
+    padding-left: 35%;
+}
+
+.div_color div .my_h2_one {
+    color: var(--color);
+}
+
+.div_color div .div_padding {
+    padding-top: 4%;
+    padding-left: 37%;
+    display: flex;
+    gap: 5%;
+}
+
+.div_color div .div_padding .div_icon_one {
+    display: flex;
+    gap: 50%;
+}
+
+.div_color div .div_padding .div_icon_one .here_icon:hover {
+    cursor: pointer;
+    color: red;
+}
+
+.div_color div .div_padding .div_icon_one a {
+    color: black;
+}
+
+/* end contact */
+/* start footer */
+.div_footer {
+    display: flex;
+    justify-content: center;
+    padding-top: 2%;
+    background-color: #2C4855;
+    color: white;
+}
+
+.div_footer p span {
+    color: var(--color);
+}
+
+/* end footer */
+/* start media */
+
+@media (max-width: 685px) and (min-width: 0px) {
+    .div_senrices h1 {
+        font-size: 50px;
+    }
+
+    .div_color h1 {
+        font-size: 50px;
+    }
+
+    .div_about h1 {
+        font-size: 50px;
+    }
+
+    .div_about .container .row div img {
+        width: 100%;
+    }
+
+    .div_color div .my_h2,
+    .my_h2_one {
+        padding-left: 0%;
+    }
+
+    .div_color div .div_padding {
+        margin-left: -35%;
+    }
+}
+
+@media (max-width: 320px) and (min-width: 0px) {
+    .div_center h1 {
+        font-size: 30px;
+    }
+
+    .div_flex .container .row div div {
+        margin-left: -10%;
+        text-align: center;
+    }
+
+    .div_color .container .row {
+        padding-left: 3%;
+    }
+
+    .div_color div .my_h2_one {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 741px) and (min-width: 0px) {
+    .div_flex img {
+        display: none;
+    }
+}
+
+@media (max-width: 1285px) and (min-width: 0px) {
+    .div_flex::after {
+        display: none;
+    }
+}
+
+@media (max-width: 1669px) and (min-width: 0px) {
+    .div_about::after {
+        display: none;
+    }
+
+    .div_about::before {
+        display: none;
+    }
+}
+
+@media (max-width: 1397px) and (min-width: 0px) {
+
+    .div_about .container .row div .p_lorem::after {
+        display: none;
+    }
+}
+
+/* end media */
