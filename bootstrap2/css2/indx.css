@@ -340,7 +340,7 @@ hr {
 
 @media (max-width: 685px) and (min-width: 0px) {
     .div_senrices h1 {
-        font-size: 50px;
+        font-size: 30px;
     }
 
     .div_color h1 {
@@ -378,10 +378,6 @@ hr {
     .div_color .container .row {
         padding-left: 3%;
     }
-
-    .div_color div .my_h2_one {
-        font-size: 10px;
-    }
 }
 
 @media (max-width: 741px) and (min-width: 0px) {
@@ -393,6 +389,14 @@ hr {
         display: flex;
         flex-direction: column;
         text-align: center;
+    }
+
+    .div_flex {
+        padding-left: 0%;
+    }
+
+    .div_color div .my_h2_one {
+        font-size: 10px;
     }
 }
 
